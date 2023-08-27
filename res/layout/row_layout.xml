@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="#0C0B0A"
+        android:id="@+id/profileS"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#FFC107"
+        app:civ_border_overlay="true"
+        android:layout_width="50sp"
+        android:layout_height="50sp"/>
+    <TextView
+        android:text="Muhammad Sajjad"
+        android:id="@+id/NamesS"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/profileS"
+        android:layout_toEndOf="@id/profileS"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_width="10dp"
+        app:civ_border_color="#05df29"
+        android:layout_below="@id/NamesS"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_background"
+        android:visibility="gone"
+        android:id="@+id/img_On"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/profileS"
+        android:layout_toEndOf="@id/profileS"
+        android:layout_width="15dp"
+        android:layout_height="15dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_width="10dp"
+        app:civ_border_color="#bfbfbf"
+        android:layout_below="@id/NamesS"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/img_off"
+        android:visibility="gone"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/profileS"
+        android:layout_toEndOf="@id/profileS"
+        android:layout_width="15dp"
+        android:layout_height="15dp"/>
+</RelativeLayout>
